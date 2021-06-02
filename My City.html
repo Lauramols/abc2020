@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+                width: 100%;
+            }
+        }  
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font: bold;
+            width:auto
+            inherit
+
+        }
+
+        article {
+            background-color:ActiveCaption lightblue;
+            padding: 200px;
+            font-size: x-large;
+            text-align: center;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+    footer { background-color: #777; padding: 5px; text-align: center; color: white; <ul> <li><a href="file:///C:/Users/abc20-009/Desktop/website/About.html">About Us</a></li>; <li> <a href="file:///C:/Users/abc20-009/Desktop/website/Lifestyle.html">Lifestyle</a> </li> }
+    }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 12px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+                /* Change background color of buttons on hover */
+                .tab button:hover {
+                    background-color: #ddd;
+                }
+
+                /* Create an active/current tablink class */
+                .tab button.active {
+                    background-color: #ccc;
+                }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        
+        /*Style the close button*/
+        .topright {
+        float: right;
+        cursor: pointer;
+        font-size: 28px;
+        }
+
+        .topright:hover {color:red;}
+
+    </style>
+    <head>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'About Page')">About us</button>
+            <button class="tablinks" onclick="openCity(event, 'Lifestyle Page')">Lifestyle & Attractions</button>
+            <button class="tablinks" onclick="openCity(event, 'Events Page')">Events</button>
+            <button class="tablinks" onclick="openCity(event, 'Connect Page')">Contact Us</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo Page'Thank You)">Thank You</button>
+
+        </div>
+
+        <div id="About Page" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3>About Page</h3>
+            <p>Learn about the culture!</p>
+            <li><a href="file:///C:/Users/abc20-009/Desktop/website/About.html">About Us</a></li>
+        </div>
+        
+        <div id="Lifestyle Page" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3>Lifestyle</h3>
+            <p>Life</p>
+            <li><a href="file:///C:/Users/abc20-009/Desktop/website/Lifestyle.html">Lifestyle</a></li>
+        </div>
+
+        <div id="Events Page" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3>Events Page</h3>
+            <p>Events.</p>
+            <li><a href="file:///C:/Users/abc20-009/Desktop/website/Events.html">Events</a></li>
+        </div>
+
+
+        <div id="Connect Page" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3>Connect Page</h3>
+            <p>Connect with us.</p>
+            <li><a href="file:///C:/Users/abc20-009/Desktop/website/Contact%20Us.html">Contact us</a></li>
+
+        </div>
+
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            //Get the element with id="defaultOpen"and click on it
+            document.getElementById("defaultOpen").click();
+
+        </script>
+        </style>
+    </head>
+
+<body>
+
+    <header>
+        <h2>SEOUL</h2>
+    </header>
+
+    <section>
+
+        <article>
+            <h1>My City</h1>
+            <p>We Welcome you to SEOUL!</>
+        </article>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting our Page!</p>
+    </footer>
+
+
+</body>
+</html>
+
